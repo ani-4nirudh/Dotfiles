@@ -15,4 +15,6 @@ ${HOME}/.config
 
 # Preview
 ![Home](static/images/home.png)
+*Fig. 1: Home*
 ![Git and Text Rendering](static/images/dotfiles.png)
+*Fig. 2: Git and Text Rendering*
