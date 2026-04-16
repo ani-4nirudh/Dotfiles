@@ -1,4 +1,5 @@
 # Introduction
+- Requirements: [Nerd-Font Tools](https://www.nerdfonts.com/), [Alacritty](https://alacritty.org/) and [Starship](https://starship.rs/) 
 - This repository contains the starship and alacritty config files used on my system.
 - Put the files in the following locations:
 ```
@@ -13,4 +14,5 @@ ${HOME}/.config
 ```
 
 # Preview
-
+![Home](static/images/home.png)
+![Git and Text Rendering](static/images/dotfiles.png)
