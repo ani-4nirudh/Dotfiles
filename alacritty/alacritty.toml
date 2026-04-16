@@ -1,0 +1,47 @@
+# ${HOME}/.config/alacritty/alacritty.toml
+
+[general]
+import = [
+  "~/.config/alacritty/themes/themes/marine_dark_custom.toml"
+]
+# import = [
+#   "~/.config/alacritty/themes/themes/marine_dark.toml"
+# ]
+
+[window]
+
+opacity = 0.95
+
+padding.x = 10
+padding.y = 10
+
+decorations = "Full"
+decorations_theme_variant = "Dark"
+
+[font]
+size = 10.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+[cursor]
+blink_interval = 750
+blink_timeout = 5
+unfocused_hollow = true
+
+[cursor.style]
+shape = "Block"
+blinking = "Always"

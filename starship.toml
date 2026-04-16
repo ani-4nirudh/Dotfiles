@@ -1,0 +1,111 @@
+# Replace the "❯" symbol in the prompt with "➜"
+[character]
+success_symbol = "[➜](bold green)" 
+
+# Use custom format
+format = """
+[  󱞪 \\$](bold green) """
+
+[username]
+style_user = "bold yellow"
+style_root = "bold red"
+format = " [$user]($style) in "
+disabled = false
+show_always = true
+aliases = {"praani" = " "}
+
+[cmd_duration]
+min_time = 500
+format = "took [$duration](bold yellow) "
+
+[directory]
+disabled = false
+format = "[$path]($style)[$read_only]($read_only_style) "
+style = "bold #f57800"
+truncation_length = 0
+truncate_to_repo = true
+home_symbol = '󱔐 '
+fish_style_pwd_dir_length = 0
+read_only = " 🔒"
+read_only_style = "red"
+
+[battery]
+full_symbol = ' 󰁹 '
+charging_symbol = ' 󰂄 '
+discharging_symbol = ' 󰁹  '
+format = '[$symbol$percentage]($style)'
+disabled = false
+
+[[battery.display]] # 'bold red' style and discharging_symbol when capacity is between 0% and 10%
+threshold = 10
+style = 'bold red'
+
+[[battery.display]] # 'bold yellow' style and 💦 symbol when capacity is between 10% and 30%
+threshold = 30
+style = 'bold yellow'
+discharging_symbol = ' 󰁹  '
+
+# when capacity is over 30%, the battery indicator will not be displayed
+
+[git_branch]
+format = "on [$symbol$branch(:remote_branch)]($style) "
+symbol = " "
+style = "bold purple"
+
+[git_commit]
+#format = "[\\($hash\\)]($style) [\\($tag\\)]($style)"
+style = "bold green"
+tag_symbol = " "
+
+[git_status]
+format ='([\[$all_status$ahead_behind\]]($style)) '
+conflicted = "="
+ahead =	"⇡${count} "
+behind = "⇣${count} "
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "?${count} "
+stashed = "$${count} "
+modified = "!${count} "
+staged = "+${count} "
+renamed = "»${count} "
+deleted = "✘${count} "
+style =	"bold red"
+disabled = false
+
+[git_state]
+rebase = "REBASING"
+merge =	"MERGING"
+revert = "REVERTING"
+cherry_pick = "CHERRY-PICKING"
+bisect = "BISECTING"
+am = "AM"
+am_or_rebase = "AM/REBASE"
+style =	"bold yellow"
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+disabled = false
+
+[hg_branch]
+symbol = " "
+style =	"bold purple"
+format = "on [$symbol$branch]($style) "
+
+[memory_usage]
+format = 'via $symbol [${ram}( | ${swap})]($style) '
+symbol = "󱪈 "
+style = "bold dimmed green"
+disabled = false
+
+[status]
+format = "[$symbol$status]($style)"
+symbol = "✖"
+style = "bold red"
+disabled = true
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
