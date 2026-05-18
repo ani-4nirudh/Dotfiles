@@ -1,12 +1,8 @@
 # ${HOME}/.config/alacritty/alacritty.toml
 
-[general]
 import = [
   "~/.config/alacritty/themes/themes/marine_dark_custom.toml"
 ]
-# import = [
-#   "~/.config/alacritty/themes/themes/marine_dark.toml"
-# ]
 
 [window]
 
@@ -19,7 +15,7 @@ decorations = "Full"
 decorations_theme_variant = "Dark"
 
 [font]
-size = 10.0
+size = 11.0
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"
