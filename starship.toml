@@ -58,6 +58,7 @@ style = "bold green"
 tag_symbol = " "
 
 [git_status]
+disabled = false
 format ='([\[$all_status$ahead_behind\]]($style)) '
 conflicted = "="
 ahead =	"⇡${count} "
@@ -70,7 +71,6 @@ staged = "+${count} "
 renamed = "»${count} "
 deleted = "✘ ${count} "
 style =	"bold red"
-disabled = false
 
 [git_state]
 rebase = "REBASING"
